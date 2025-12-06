@@ -6,7 +6,6 @@ library(plumber)
 library(jsonlite)
 library(randomForest)
 
-# ---- Load your trained Random Forest model ----
 model <- readRDS("no_show_rf_model.rds")
 
 #* Predict probability of no-show (returns numeric vector)
@@ -42,7 +41,3 @@ function(req) {
   
   return(pred_class)
 }
-
-# To run manually:
-# pr <- plumb("HW7_api_server.R")
-# pr$run(host = "0.0.0.0", port = 8000)

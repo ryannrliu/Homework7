@@ -5,8 +5,6 @@
 library(httr)
 library(jsonlite)
 
-# ---- Load your test predictor dataset ----
-# This file MUST contain:
 # lead_time_days, age, appt_hour, appt_wday, is_weekend, is_morning,
 # prior_appts, prior_no_shows, specialty, address, provider_id
 test_df <- read.csv("test_input_data.csv")
